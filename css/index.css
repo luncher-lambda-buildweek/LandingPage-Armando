@@ -127,9 +127,9 @@ html {
   font-size: 62.5%;
 }
 body {
-  max-width: 800px;
   display: block;
   width: 100%;
+  height: 100%;
 }
 h2 {
   font-size: 3.2rem;
@@ -163,6 +163,11 @@ img {
   align-items: center;
   color: white;
 }
+@media (max-width:768px) {
+  .nav-bar {
+    justify-content: space-around;
+  }
+}
 .nav-bar h1 {
   font-size: 2.8rem;
 }
@@ -193,6 +198,11 @@ img {
   color: white;
   padding-top: 30px;
 }
+@media (max-width:768px) {
+  .header-container {
+    justify-content: space-around;
+  }
+}
 .header-container .header-content {
   width: 50%;
   height: 375px;
@@ -200,6 +210,11 @@ img {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
+}
+@media (max-width:768px) {
+  .header-container .header-content {
+    width: 40%;
+  }
 }
 .header-container .header-content button {
   width: 25%;
@@ -210,9 +225,21 @@ img {
   border: 2px solid white;
   font-size: 1.4rem;
 }
+@media (max-width:768px) {
+  .header-container .header-content button {
+    width: 60%;
+    margin-top: 20px;
+  }
+}
 .header-container .header-img {
   width: 45%;
   height: auto;
+}
+@media (max-width:768px) {
+  .header-container .header-img {
+    width: 40%;
+    margin-top: 45px;
+  }
 }
 .header-container .header-img img {
   border-radius: 7px;
@@ -246,6 +273,11 @@ img {
   align-items: center;
   transform: translate(0%, -20%);
 }
+@media (max-width:768px) {
+  .features .box-features {
+    justify-content: space-around;
+  }
+}
 .features .box-features h3 {
   font-size: 2rem;
 }
@@ -261,15 +293,30 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width:768px) {
+  .features .box-features .box-features-child {
+    width: 25%;
+  }
+}
+.features .box-features .box-features-child img {
+  width: 18%;
+  height: auto;
+}
 .about {
   width: 100%;
   height: 600px;
   background-color: #44E2A3;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-content: space-between;
   padding: 30px 0px;
   color: white;
+}
+@media (max-width:768px) {
+  .about {
+    justify-content: space-around;
+  }
 }
 .about .about-content {
   width: 45%;
@@ -277,6 +324,11 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width:768px) {
+  .about .about-content {
+    width: 40%;
+  }
 }
 .about .about-content h2 {
   font-size: 2.4rem;
@@ -293,10 +345,21 @@ img {
   font-size: 1.4rem;
   color: white;
 }
+@media (max-width:768px) {
+  .about .about-content button {
+    width: 60%;
+  }
+}
 .about .about-img {
   width: 45%;
   height: auto;
   padding-top: 28px;
+}
+@media (max-width:768px) {
+  .about .about-img {
+    width: 40%;
+    margin-top: 35px;
+  }
 }
 .about .about-img img {
   border-radius: 7px;
@@ -335,17 +398,22 @@ img {
   align-content: space-around;
   align-items: center;
 }
+@media (max-width:768px) {
+  .team-container .team-content {
+    justify-content: space-evenly;
+  }
+}
 .team-container .team-content ul {
-  height: 350px;
+  height: 400px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .team-container .team-content ul li {
-  width: 15%;
-  display: inline-block;
+  width: 17%;
   padding: 20px;
-  transform: translate(50%, 0%);
-}
-.team-container .team-content ul li img {
   border-radius: 50%;
 }
 .subscribe-container {
@@ -356,6 +424,11 @@ img {
   justify-content: space-between;
   align-items: center;
   color: white;
+}
+@media (max-width:768px) {
+  .subscribe-container {
+    justify-content: space-evenly;
+  }
 }
 .subscribe-container form {
   width: 70%;
@@ -397,12 +470,22 @@ img {
   text-align: center;
   justify-content: space-around;
 }
+@media (max-width:768px) {
+  .contact-container {
+    height: 575px;
+  }
+}
 .contact-container .contact-form {
   width: 100%;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width:768px) {
+  .contact-container .contact-form {
+    height: 400px;
+  }
 }
 .contact-container .contact-form .name-email,
 .contact-container .contact-form .school-info {
@@ -429,28 +512,35 @@ img {
   padding-left: 5px;
 }
 .contact-container .contact-form .message-input {
-  width: 100%;
-  height: 200px;
-}
-.contact-container .contact-form .message-input input {
   width: 95%;
-  height: 100%;
+  height: 200px;
+  transform: translate(2%, 0%);
+}
+.contact-container .contact-form .message-input textarea {
+  width: 100%;
   border: 2px solid black;
   border-radius: 10px;
   color: #44E2A3;
   font-family: 'PT Serif', serif;
-  padding-left: 5px;
   font-size: 1.8rem;
 }
-.contact-container .contact-form .message-input input::placeholder {
-  color: black;
-  font-family: 'PT Serif', serif;
+@media (max-width:768px) {
+  .contact-container .contact-form .message-input textarea {
+    height: 150px;
+  }
+}
+.contact-container .contact-form .message-input textarea::placeholder {
   padding-left: 5px;
-  transform: translate(0%, -350%);
+  color: black;
+}
+@media (max-width:768px) {
+  .contact-container .contact-form .btn-div {
+    transform: translate(0%, -200%);
+  }
 }
 .contact-container .contact-form .btn-div button {
   width: 150px;
-  height: 28px;
+  height: 30px;
   background-color: white;
   border-radius: 7px;
   border: 2px solid black;
