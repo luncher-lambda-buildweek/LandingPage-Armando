@@ -301,3 +301,159 @@ img {
 .about .about-img img {
   border-radius: 7px;
 }
+.team-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding: 20px 0px;
+}
+.team-container .team-header {
+  width: 60%;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  text-align: center;
+  transform: translate(33%, 0%);
+}
+.team-container .team-header h2 {
+  font-size: 2.4rem;
+}
+.team-container .team-header p {
+  font-size: 1.4rem;
+}
+.team-container .team-content {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-around;
+  align-items: center;
+}
+.team-container .team-content ul {
+  height: 350px;
+  width: 100%;
+}
+.team-container .team-content ul li {
+  width: 15%;
+  display: inline-block;
+  padding: 20px;
+  transform: translate(50%, 0%);
+}
+.team-container .team-content ul li img {
+  border-radius: 50%;
+}
+.subscribe-container {
+  width: 100%;
+  height: 80px;
+  background-color: #44E2A3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.subscribe-container form {
+  width: 70%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.subscribe-container form input {
+  background-color: #44E2A3;
+  width: 250px;
+  height: 28px;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  font-family: 'PT Serif', serif;
+  padding-left: 5px;
+}
+.subscribe-container form input::placeholder {
+  color: white;
+  font-family: 'PT Serif', serif;
+  padding-left: 5px;
+}
+.subscribe-container form button {
+  width: 100px;
+  height: 28px;
+  background-color: white;
+  border-radius: 7px;
+  border: 2px solid white;
+  font-size: 1.4rem;
+  color: #44E2A3;
+}
+.contact-container {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.contact-container .contact-form {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-container .contact-form .name-email,
+.contact-container .contact-form .school-info {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact-container .contact-form .name-email input,
+.contact-container .contact-form .school-info input {
+  width: 350px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #44E2A3;
+  font-family: 'PT Serif', serif;
+  padding-left: 5px;
+  font-size: 1.8rem;
+}
+.contact-container .contact-form .name-email input::placeholder,
+.contact-container .contact-form .school-info input::placeholder {
+  color: black;
+  font-family: 'PT Serif', serif;
+  padding-left: 5px;
+}
+.contact-container .contact-form .message-input {
+  width: 100%;
+  height: 200px;
+}
+.contact-container .contact-form .message-input input {
+  width: 95%;
+  height: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: #44E2A3;
+  font-family: 'PT Serif', serif;
+  padding-left: 5px;
+  font-size: 1.8rem;
+}
+.contact-container .contact-form .message-input input::placeholder {
+  color: black;
+  font-family: 'PT Serif', serif;
+  padding-left: 5px;
+  transform: translate(0%, -350%);
+}
+.contact-container .contact-form .btn-div button {
+  width: 150px;
+  height: 28px;
+  background-color: white;
+  border-radius: 7px;
+  border: 2px solid black;
+  font-size: 1.4rem;
+  color: black;
+}
