@@ -1,6 +1,6 @@
 .features{
     width:100%;
-    height:450px;
+    height:350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,6 +29,7 @@
         }
         p{
             font-size: 1.4rem;
+            margin-top: 15px;
         }
         
     }
@@ -127,9 +128,15 @@
             height:6%;
             background-color:@primary-color;
             border-radius: 7px;
-            border: 2px solid white;
+            border: 1.2px solid white;
             font-size: 1.4rem;
             color:white;
+            &:hover{
+                color:@primary-color;
+                background-color: white;
+                border-color: @primary-color;
+                cursor: pointer;
+            }
             @media @tablet{
                 width:60%;
                 }
@@ -186,7 +193,8 @@
             font-size:2.4rem;
         }
         p{
-            font-size:1.4rem;
+            font-size:1.6rem;
+            transform: translate(0%, -50%);
             @media @mobile{
                 text-align: start;
                 margin-left: 15px;
@@ -265,9 +273,9 @@
             background-color: @primary-color;
             width:250px;
             height: 28px;
-            border: 2px solid white;
+            border: 1.2px solid white;
             border-radius:10px;
-            color:white;
+            color:gray;
             font-family: @font-style;
             padding-left: 5px;
             @media @mobile{
@@ -285,13 +293,19 @@
             height:28px;
             background-color:white;
             border-radius: 7px;
-            border: 2px solid white;
+            border: 1.2px solid lightgray;
             font-size: 1.4rem;
             color:@primary-color;
+            margin: 0 10px;
+            &:hover{
+                color:white;
+                background-color: @primary-color;
+                border-color: white;
+                cursor: pointer;
+            }
             @media @mobile{
                 width:78px;
                 height:22px;
-                margin-right:10px;
             }
             }
     }
@@ -343,9 +357,9 @@
             input{
                 width:350px;
                 height: 40px;
-                border: 2px solid black;
+                border: 1.2px solid black;
                 border-radius:10px;
-                color:@primary-color;
+                color:gray;
                 font-family: @font-style;
                 padding-left: 5px;
                 font-size: 1.8rem;
@@ -370,7 +384,7 @@
             textarea{
                 width:100%;
                 height:200px;
-                border: 2px solid black;
+                border: 1.2px solid black;
                 border-radius:10px;
                 color:@primary-color;
                 font-family: @font-style;
@@ -400,7 +414,7 @@
             height:30px;
             background-color:white;
             border-radius: 7px;
-            border: 2px solid black;
+            border: 1.2px solid black;
             font-size: 1.4rem;
             color:black;
             @media @mobile{

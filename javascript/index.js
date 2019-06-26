@@ -22,3 +22,7 @@ class Panel{
 const panels = document.querySelectorAll('.panel')
 panels.forEach((panel) => new Panel(panel))
 console.log(panels)
+
+const inputs = document.querySelectorAll('input')
+const message = document.querySelectorAll('textarea')
+

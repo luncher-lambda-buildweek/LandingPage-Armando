@@ -182,7 +182,7 @@ img {
 }
 .nav-bar .nav-links {
   display: flex;
-  width: 60%;
+  width: 45%;
   height: 60px;
   justify-content: space-between;
   align-items: center;
@@ -214,6 +214,9 @@ img {
     justify-content: space-around;
   }
 }
+.nav-bar .nav-links .mobile-hamburger {
+  text-decoration: none;
+}
 @media (max-width:500px) {
   .nav-bar .nav-links .mobile-hamburger {
     display: none;
@@ -225,8 +228,14 @@ img {
   background-color: #44E2A3;
   color: white;
   border-radius: 7px;
-  border: 2px solid white;
+  border: 1.2px solid white;
   font-size: 1.4rem;
+}
+.nav-bar .nav-links button:hover {
+  color: #44E2A3;
+  background-color: white;
+  border-color: #44E2A3;
+  cursor: pointer;
 }
 @media (max-width:500px) {
   .nav-bar .nav-links button {
@@ -282,6 +291,15 @@ img {
     padding-right: 15px;
   }
 }
+.header-container .header-content h2 {
+  font-size: 2.2rem;
+}
+.header-container .header-content p {
+  font-size: 2.2rem;
+  height: 70%;
+  width: 90%;
+  font-weight: 100;
+}
 @media (max-width:500px) {
   .header-container .header-content p {
     padding: 25px;
@@ -293,8 +311,14 @@ img {
   background-color: #44E2A3;
   color: white;
   border-radius: 7px;
-  border: 2px solid white;
+  border: 1.2px solid white;
   font-size: 1.4rem;
+}
+.header-container .header-content button:hover {
+  color: #44E2A3;
+  background-color: white;
+  border-color: #44E2A3;
+  cursor: pointer;
 }
 @media (max-width:768px) {
   .header-container .header-content button {
@@ -330,7 +354,7 @@ img {
 }
 .features {
   width: 100%;
-  height: 450px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -365,6 +389,7 @@ img {
 }
 .features .features-heading p {
   font-size: 1.4rem;
+  margin-top: 15px;
 }
 .features .box-features {
   width: 100%;
@@ -478,9 +503,15 @@ img {
   height: 6%;
   background-color: #44E2A3;
   border-radius: 7px;
-  border: 2px solid white;
+  border: 1.2px solid white;
   font-size: 1.4rem;
   color: white;
+}
+.about .about-content button:hover {
+  color: #44E2A3;
+  background-color: white;
+  border-color: #44E2A3;
+  cursor: pointer;
 }
 @media (max-width:768px) {
   .about .about-content button {
@@ -549,7 +580,8 @@ img {
   font-size: 2.4rem;
 }
 .team-container .team-header p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  transform: translate(0%, -50%);
 }
 @media (max-width:500px) {
   .team-container .team-header p {
@@ -647,9 +679,9 @@ img {
   background-color: #44E2A3;
   width: 250px;
   height: 28px;
-  border: 2px solid white;
+  border: 1.2px solid white;
   border-radius: 10px;
-  color: white;
+  color: gray;
   font-family: 'PT Serif', serif;
   padding-left: 5px;
 }
@@ -669,15 +701,21 @@ img {
   height: 28px;
   background-color: white;
   border-radius: 7px;
-  border: 2px solid white;
+  border: 1.2px solid lightgray;
   font-size: 1.4rem;
   color: #44E2A3;
+  margin: 0 10px;
+}
+.subscribe-container form button:hover {
+  color: white;
+  background-color: #44E2A3;
+  border-color: white;
+  cursor: pointer;
 }
 @media (max-width:500px) {
   .subscribe-container form button {
     width: 78px;
     height: 22px;
-    margin-right: 10px;
   }
 }
 .contact-container {
@@ -743,9 +781,9 @@ img {
 .contact-container .contact-form .school-info input {
   width: 350px;
   height: 40px;
-  border: 2px solid black;
+  border: 1.2px solid black;
   border-radius: 10px;
-  color: #44E2A3;
+  color: gray;
   font-family: 'PT Serif', serif;
   padding-left: 5px;
   font-size: 1.8rem;
@@ -774,7 +812,7 @@ img {
 .contact-container .contact-form .message-input textarea {
   width: 100%;
   height: 200px;
-  border: 2px solid black;
+  border: 1.2px solid black;
   border-radius: 10px;
   color: #44E2A3;
   font-family: 'PT Serif', serif;
@@ -809,7 +847,7 @@ img {
   height: 30px;
   background-color: white;
   border-radius: 7px;
-  border: 2px solid black;
+  border: 1.2px solid black;
   font-size: 1.4rem;
   color: black;
 }
@@ -852,6 +890,7 @@ img {
   border: 1px solid gray;
   font-size: 1.4rem;
   color: black;
+  font-family: 'PT Serif', serif;
 }
 .about-content .accordion .panel .panel-bar .panel-buttons .hide-btn {
   display: none;
