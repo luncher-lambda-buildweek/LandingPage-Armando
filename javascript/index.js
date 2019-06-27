@@ -56,7 +56,41 @@ if (pageHREF !== ''){
         }
     }
 }
+//carousel
+
+const track = document.querySelector('.carousel_track')
+const slides = Array.from(document.querySelectorAll('.carousel_slide'))
+const nextButton = document.querySelector('.carousel-button-right')
+const prevButton = document.querySelector('.carousel-button-left')
+const dotsNav = document.querySelectorAll('.carousel-nav')
+const dots = document.querySelectorAll('.carousel-indicator')
+
+const slideWidth = slides[0].getBoundingClientRect().width
+
+const setSlidePosition = (slide, index) => {
+    slide.style.left = slideWidth * index + 'px'
+}
+
+slides.forEach(setSlidePosition)
 
 
+const moveToSlide = (track, currentSlide, targetSlide) => {
+    track.style.transform = `translateX(-${targetSlide.style.left})`
+    currentSlide.classList.remove('current-slide')
+    targetSlide.classList.add('current-slide')
+}
+//move slide to the right
+nextButton.addEventListener('click', (event) =>{
+    const currentSlide = track.querySelector('.current-slide')
+    const nextSlide = currentSlide.nextElementSibling
 
+    moveToSlide(track, currentSlide, nextSlide)
+})
+
+prevButton.addEventListener('click', (event) => {
+    const currentSlide = track.querySelector('.current-slide')
+    const prevSlide = currentSlide.previousElementSibling
+
+    moveToSlide(track, currentSlide, prevSlide)
+})
 
