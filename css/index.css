@@ -189,6 +189,14 @@ img {
   font-size: 1.6rem;
   padding-right: 10px;
 }
+.nav-bar .nav-links a {
+  color: white;
+}
+.nav-bar .nav-links .active {
+  color: #137a51;
+  font-weight: 600;
+  font-size: 2.2rem;
+}
 @media (max-width:500px) {
   .nav-bar .nav-links {
     width: 25%;
@@ -209,7 +217,7 @@ img {
     height: auto;
   }
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .nav-bar .nav-links {
     justify-content: space-around;
   }
@@ -252,7 +260,7 @@ img {
   color: white;
   padding-top: 15px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .header-container {
     justify-content: space-around;
   }
@@ -275,7 +283,7 @@ img {
   margin-top: 30px;
   padding-left: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .header-container .header-content {
     width: 40%;
   }
@@ -320,7 +328,7 @@ img {
   border-color: #44E2A3;
   cursor: pointer;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .header-container .header-content button {
     width: 60%;
     margin-top: 20px;
@@ -336,7 +344,7 @@ img {
   height: auto;
   padding-right: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .header-container .header-img {
     width: 40%;
     margin-top: 45px;
@@ -399,7 +407,7 @@ img {
   align-items: center;
   transform: translate(0%, -20%);
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .features .box-features {
     justify-content: space-around;
   }
@@ -431,7 +439,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .features .box-features .box-features-child {
     width: 25%;
   }
@@ -459,7 +467,7 @@ img {
   padding: 30px 0px;
   color: white;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .about {
     justify-content: space-around;
   }
@@ -482,7 +490,7 @@ img {
   justify-content: space-evenly;
   padding-right: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .about .about-content {
     width: 40%;
   }
@@ -513,7 +521,7 @@ img {
   border-color: #44E2A3;
   cursor: pointer;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .about .about-content button {
     width: 60%;
   }
@@ -524,7 +532,7 @@ img {
   padding-top: 28px;
   padding-left: 10px;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .about .about-img {
     width: 40%;
     margin-top: 35px;
@@ -598,7 +606,7 @@ img {
   align-content: space-around;
   align-items: center;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .team-container .team-content {
     justify-content: space-evenly;
   }
@@ -652,7 +660,7 @@ img {
     font-size: 1.4rem;
   }
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .subscribe-container {
     justify-content: space-evenly;
   }
@@ -727,7 +735,7 @@ img {
   text-align: center;
   justify-content: space-around;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .contact-container {
     height: 575px;
   }
@@ -751,7 +759,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .contact-container .contact-form {
     height: 400px;
   }
@@ -787,6 +795,7 @@ img {
   font-family: 'PT Serif', serif;
   padding-left: 5px;
   font-size: 1.8rem;
+  box-shadow: 1px 1px 5px gray;
 }
 @media (max-width:500px) {
   .contact-container .contact-form .name-email input,
@@ -817,8 +826,9 @@ img {
   color: #44E2A3;
   font-family: 'PT Serif', serif;
   font-size: 1.8rem;
+  box-shadow: 1px 1px 5px gray;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .contact-container .contact-form .message-input textarea {
     height: 150px;
   }
@@ -832,7 +842,7 @@ img {
   padding-left: 5px;
   color: black;
 }
-@media (max-width:768px) {
+@media (max-width:800px) {
   .contact-container .contact-form .btn-div {
     transform: translate(0%, -200%);
   }
@@ -850,6 +860,7 @@ img {
   border: 1.2px solid black;
   font-size: 1.4rem;
   color: black;
+  box-shadow: 1px 1px 5px gray;
 }
 @media (max-width:500px) {
   .contact-container .contact-form .btn-div button {
@@ -876,6 +887,7 @@ img {
   border: 1px solid gray;
   border-radius: 8px;
   margin: 50px 18px;
+  box-shadow: 1px 1px 5px gray;
 }
 .about-content .accordion .panel .panel-bar {
   display: flex;
