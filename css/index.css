@@ -711,6 +711,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin: 0 auto;
 }
 @media (max-width:500px) {
   .team-container .team-content ul {
