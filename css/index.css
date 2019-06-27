@@ -458,6 +458,7 @@ img {
   height: auto;
 }
 .carousel {
+  transform: translateY(-3%);
   position: relative;
   width: 90%;
   height: 500px;
@@ -493,6 +494,7 @@ img {
   height: 100%;
   position: relative;
   overflow: hidden;
+  padding-bottom: 10px;
 }
 .carousel .carousel_track-container .carousel_track {
   padding: 0;
