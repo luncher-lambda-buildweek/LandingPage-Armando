@@ -6,8 +6,9 @@
     justify-content: space-between;
     align-items: center;
     @media @mobile{
-        height:1000px;
-        justify-content: space-evenly;
+        height:900px;
+        justify-content: space-around;
+        margin:0 auto;
     }
     .features-heading{
         width:60%;
@@ -18,18 +19,15 @@
         @media @mobile{
             width:95%;
             height:220px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: flex-start;
-            justify-content: space-around;
+            margin: 0 auto;
+            margin-top:20px;
         }
         h2{
             font-size:2.4rem;
         }
         p{
             font-size: 1.4rem;
-            margin-top: 15px;
+            margin-top: 30px;
         }
         
     }
@@ -50,7 +48,8 @@
             flex-direction: column;
             align-items: center;
             align-content: flex-start;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            margin: 0 auto;
             transform: translate(0%, 0%)
         }
         h3{
@@ -84,6 +83,10 @@
     }
 }
 .carousel{
+    @media @mobile{
+        display: none;
+        
+    }
     .is-hidden{
         display: none;
     }
@@ -172,6 +175,8 @@
         align-items: center;
         align-content: flex-start;
         justify-content: space-around;
+        padding:0;
+        margin: 0 auto;
     }
     .about-content{
         width:45%;
@@ -184,7 +189,9 @@
             width:40%;
             }
         @media @mobile{
-            width:95%;
+            width:85%;
+            margin: 0 auto;
+            padding-right:0;
         }
         h2{
             font-size: 2.4rem;
@@ -209,6 +216,10 @@
             @media @tablet{
                 width:60%;
                 }
+            @media @mobile{
+                width:150px;
+                margin: 0 auto;
+            }
         }
     }
     .about-img{
@@ -222,6 +233,7 @@
             }
         @media @mobile{
             display:none;
+            padding:0;
         }
         img{
             border-radius:7px;
@@ -282,19 +294,18 @@
             justify-content: space-evenly;
             }
         @media @mobile{
-            height:500px;
-            transform:translate(0%, -0%);
-        }
+            height:500px;        }
         ul{
             height:400px;
-            width:100%;
+            width:85%;
             display:flex;
             flex-direction: row;
             flex-wrap:wrap;
             justify-content: space-evenly;
             @media @mobile{
                 height:500px;
-                transform:translate(0%, -0%);            }
+                margin: 0 auto;            
+            }
             li{
                 width:17%;
                 padding:20px;
@@ -350,6 +361,8 @@
             @media @mobile{
                 width:225px;
                 height:20px;
+                padding-left: 0;
+                margin-left: 0;
             }
             &::placeholder{
                 color:white;
@@ -410,6 +423,7 @@
             height:400px;
             }
         @media @mobile{
+            width:90%;
             height: 500px;
         }
         .name-email, .school-info{

@@ -1,3 +1,5 @@
+//accordion
+
 class Panel{
     constructor(panel){
         this.openBtn = panel.querySelector('.panel-btn-open')
@@ -42,6 +44,9 @@ message.forEach((message) => message.addEventListener('blur', (event) => {
     event.target.setAttribute('style', 'transform:scale(1.00)')
 },true))
 
+
+//highlight current nav item
+
 let urlStr = document.location.href
 let urlArr = urlStr.split('/')
 let pageHREF = urlArr[urlArr.length-1]
@@ -56,6 +61,7 @@ if (pageHREF !== ''){
         }
     }
 }
+
 //carousel
 
 const track = document.querySelector('.carousel_track')
@@ -97,7 +103,8 @@ const displayArrows = (slides, prevButton, nextButton, targetIndex) => {
         nextButton.classList.remove('is-hidden')
 }
 }
-//move slide to the right
+
+
 nextButton.addEventListener('click', (event) =>{
     const currentSlide = track.querySelector('.current-slide')
     const nextSlide = currentSlide.nextElementSibling
@@ -125,7 +132,7 @@ prevButton.addEventListener('click', (event) => {
     updateDots(currentDot, prevDot)
 
     displayArrows(slides, prevButton, nextButton, prevIndex)
-
+    console.log('hello')
 })
 
 dotsNav.addEventListener('click', (event) =>{

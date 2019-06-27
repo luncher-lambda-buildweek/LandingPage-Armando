@@ -35,7 +35,7 @@
             font-size: 2.2rem;
         }
         @media @mobile{
-            width:25%;
+            width:45%;
             justify-content: flex-end;
         }
         
@@ -53,12 +53,6 @@
         }
         @media @tablet{
         justify-content: space-around;
-        }
-        .mobile-hamburger{
-            text-decoration: none;
-            @media @mobile{
-                display: none;
-            }
         }
         button{
             width:20%;
@@ -112,15 +106,17 @@
             }
         @media @mobile{
             height:400px;
-            width: 100%;
+            width: 90%;
             align-content: center;
             justify-content: center;
             align-items: center;
-            margin-top: 0px;
-            padding-right: 15px;
+            margin:0 auto;
             }
         h2{
             font-size:2.2rem;
+            @media @mobile{
+                font-size: 2.6rem;
+            }
         }
         p{
             font-size:2.2rem;
@@ -150,7 +146,7 @@
                 margin-top: 20px;
                 }
             @media @mobile{
-                margin-top: 0px;
+                margin-top: -50px;
             }
         }
     }
@@ -166,6 +162,7 @@
             margin-top: 0px;
             width:90%;
             margin-left: 25px;
+            padding-right: 0;
         }
         img{
             border-radius:7px;
