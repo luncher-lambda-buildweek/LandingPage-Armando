@@ -255,7 +255,7 @@ img {
   align-content: space-between;
   background-color: #789956;
   color: white;
-  background-image: linear-gradient(to bottom, rgba(120, 153, 86, 0.9999), rgba(11, 0, 71, 0.5)), url(../images/children-class-classroom-1720186.jpg);
+  background-image: linear-gradient(to bottom, rgba(120, 153, 86, 0.9999), rgba(11, 0, 71, 0.75)), url(../images/children-class-classroom-1720186.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -284,7 +284,7 @@ img {
 }
 @media (max-width:800px) {
   .header-container .header-content {
-    width: 40%;
+    width: 85%;
   }
 }
 @media (max-width:500px) {
@@ -310,6 +310,7 @@ img {
   font-size: 2.2rem;
   line-height: 2;
   text-align: start;
+  text-shadow: 1.2px 1.2px rgba(53, 53, 53, 0.5);
 }
 @media (max-width:500px) {
   .header-container .header-content p {
@@ -336,8 +337,10 @@ img {
 }
 @media (max-width:800px) {
   .header-container .header-content button {
-    width: 60%;
+    width: 40%;
+    margin: 0 auto;
     margin-top: 20px;
+    transform: translateX(0%);
   }
 }
 @media (max-width:500px) {
@@ -528,7 +531,7 @@ img {
   justify-content: space-between;
   align-content: space-evenly;
   color: white;
-  background-image: linear-gradient(to bottom, rgba(120, 153, 86, 0.999), rgba(11, 0, 71, 0.5)), url(../images/art-art-materials-artistic-256430.jpg);
+  background-image: linear-gradient(to bottom, rgba(120, 153, 86, 0.999), rgba(11, 0, 71, 0.7)), url(../images/art-art-materials-artistic-256430.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -559,7 +562,7 @@ img {
 }
 @media (max-width:800px) {
   .about .about-content {
-    width: 40%;
+    width: 85%;
   }
 }
 @media (max-width:500px) {
@@ -573,7 +576,7 @@ img {
   font-size: 2.6rem;
   line-height: 1.8;
   text-align: center;
-  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.8);
+  text-shadow: 1.5px 1.5px rgba(53, 53, 53, 0.65);
 }
 @media (max-width:500px) {
   .about .about-content p {
@@ -647,6 +650,10 @@ img {
 .team-container .team-header p {
   font-size: 1.6rem;
   transform: translate(0%, -50%);
+}
+.team-container .team-header p a {
+  text-decoration: none;
+  color: #789956;
 }
 @media (max-width:500px) {
   .team-container .team-header p {
