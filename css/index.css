@@ -163,7 +163,7 @@ img {
   }
 }
 .nav-bar {
-  background-color: #1fc784;
+  background-color: #789956;
   height: 60px;
   width: 100%;
   display: flex;
@@ -181,7 +181,7 @@ img {
   padding-left: 15px;
 }
 .nav-bar h1:hover {
-  color: #0a432c;
+  color: #2b371f;
   font-weight: 600;
   transform: scale(1.1);
 }
@@ -198,7 +198,7 @@ img {
   color: white;
 }
 .nav-bar .nav-links .active {
-  color: #0a432c;
+  color: #2b371f;
   font-weight: 600;
   font-size: 2.2rem;
 }
@@ -230,16 +230,16 @@ img {
 .nav-bar .nav-links button {
   width: 20%;
   height: 45%;
-  background-color: #1fc784;
+  background-color: #789956;
   color: white;
   border-radius: 7px;
   border: 1.2px solid white;
   font-size: 1.4rem;
 }
 .nav-bar .nav-links button:hover {
-  color: #1fc784;
+  color: #789956;
   background-color: white;
-  border-color: #1fc784;
+  border-color: #789956;
   cursor: pointer;
 }
 @media (max-width:500px) {
@@ -253,7 +253,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-content: space-between;
-  background-color: #1fc784;
+  background-color: #789956;
   color: white;
   padding-top: 15px;
 }
@@ -317,16 +317,16 @@ img {
 .header-container .header-content button {
   width: 25%;
   height: 8%;
-  background-color: #1fc784;
+  background-color: #789956;
   color: white;
   border-radius: 7px;
   border: 1.2px solid white;
   font-size: 1.4rem;
 }
 .header-container .header-content button:hover {
-  color: #1fc784;
+  color: #789956;
   background-color: white;
-  border-color: #1fc784;
+  border-color: #789956;
   cursor: pointer;
 }
 @media (max-width:800px) {
@@ -405,7 +405,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transform: translate(0%, -20%);
+  transform: translate(0%, -15%);
 }
 @media (max-width:800px) {
   .features .box-features {
@@ -429,10 +429,10 @@ img {
   font-size: 2rem;
 }
 .features .box-features p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .features .box-features .box-features-child {
-  width: 30%;
+  width: 33%;
   height: 180px;
   display: flex;
   text-align: center;
@@ -531,18 +531,20 @@ img {
   cursor: pointer;
 }
 .carousel .carousel-nav .current-slide {
-  background-color: #1fc784;
+  background-color: #789956;
 }
 .about {
   width: 100%;
-  height: 600px;
-  background-color: #1fc784;
+  height: 400px;
+  background-color: #789956;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  align-content: space-between;
-  padding: 30px 0px;
+  align-content: space-evenly;
   color: white;
+  background-image: linear-gradient(to bottom, rgba(120, 153, 86, 0.75), rgba(117, 19, 93, 0.6)), url(../images/art-art-materials-artistic-256430.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width:800px) {
   .about {
@@ -562,12 +564,12 @@ img {
   }
 }
 .about .about-content {
-  width: 45%;
-  height: 600px;
+  width: 90%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-right: 10px;
+  margin: 0 auto;
 }
 @media (max-width:800px) {
   .about .about-content {
@@ -581,25 +583,26 @@ img {
     padding-right: 0;
   }
 }
-.about .about-content h2 {
-  font-size: 2.4rem;
-}
 .about .about-content p {
-  font-size: 1.4rem;
+  font-size: 2.6rem;
+  line-height: 1.8;
+  text-align: center;
+  text-shadow: 1.5px 1.5px rgba(0, 0, 0, 0.8);
 }
 .about .about-content button {
   width: 45%;
-  height: 6%;
-  background-color: #1fc784;
+  height: 10%;
+  background-color: #789956;
   border-radius: 7px;
   border: 1.2px solid white;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: white;
+  margin: 0 auto;
 }
 .about .about-content button:hover {
-  color: #1fc784;
+  color: #789956;
   background-color: white;
-  border-color: #1fc784;
+  border-color: #789956;
   cursor: pointer;
 }
 @media (max-width:800px) {
@@ -613,35 +616,9 @@ img {
     margin: 0 auto;
   }
 }
-.about .about-img {
-  width: 45%;
-  height: auto;
-  padding-top: 28px;
-  padding-left: 10px;
-}
-@media (max-width:800px) {
-  .about .about-img {
-    width: 40%;
-    margin-top: 35px;
-  }
-}
-@media (max-width:500px) {
-  .about .about-img {
-    display: none;
-    padding: 0;
-  }
-}
-.about .about-img img {
-  border-radius: 7px;
-}
-@media (max-width:500px) {
-  .about .about-img img {
-    display: none;
-  }
-}
 .team-container {
   width: 100%;
-  height: 900px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -657,7 +634,7 @@ img {
 }
 .team-container .team-header {
   width: 60%;
-  height: 125px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -737,7 +714,7 @@ img {
 .subscribe-container {
   width: 100%;
   height: 80px;
-  background-color: #1fc784;
+  background-color: #789956;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -775,7 +752,7 @@ img {
   }
 }
 .subscribe-container form input {
-  background-color: #1fc784;
+  background-color: #789956;
   width: 250px;
   height: 28px;
   border: 1.2px solid white;
@@ -804,12 +781,12 @@ img {
   border-radius: 7px;
   border: 1.2px solid lightgray;
   font-size: 1.4rem;
-  color: #1fc784;
+  color: #789956;
   margin: 0 10px;
 }
 .subscribe-container form button:hover {
   color: white;
-  background-color: #1fc784;
+  background-color: #789956;
   border-color: white;
   cursor: pointer;
 }
@@ -917,7 +894,7 @@ img {
   height: 200px;
   border: 1.2px solid black;
   border-radius: 10px;
-  color: #1fc784;
+  color: #789956;
   font-family: 'PT Serif', serif;
   font-size: 1.8rem;
   box-shadow: 1px 1px 5px gray;
