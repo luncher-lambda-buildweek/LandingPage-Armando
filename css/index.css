@@ -982,10 +982,10 @@ img {
   padding-top: 25px;
 }
 .about-content .accordion .panel .panel-content img {
-  width: 20%;
-  height: auto;
+  width: 15%;
+  height: 15%;
+  object-fit: cover;
   border-radius: 50%;
-  margin-top: 25px;
 }
 .about-content .accordion .panel .toggle-on {
   display: block;
